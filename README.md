@@ -51,8 +51,7 @@
 
 
 # Movie
-
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">M5stack Morse code trainer.<br>大幅にアップデート。<br>UIをリッチにしてトレーニングモードをデフォルトにした。<br>正解したら自動で次の文字に切り替ります。練習しやすい！<a href="https://twitter.com/hashtag/M5Stack?src=hash&amp;ref_src=twsrc%5Etfw">#M5Stack</a> <a href="https://t.co/7TCEXce7e3">pic.twitter.com/7TCEXce7e3</a></p>&mdash; Nabeshin (@desmoquattro996) <a href="https://twitter.com/desmoquattro996/status/1317627715571257344?ref_src=twsrc%5Etfw">October 18, 2020</a></blockquote>
+<a href="https://t.co/7TCEXce7e3">pic.twitter.com/7TCEXce7e3</a>
 
 
 # Photos
