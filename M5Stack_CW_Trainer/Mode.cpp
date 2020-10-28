@@ -7,6 +7,7 @@
 #include "Mode.h"
 
 CTRL_MODE_T m_CtrlMode;
+INPUT_METHOD_T m_InputMethod;
 boolean mIsJpMode = false;   //Japanese mode flag
 
 CTRL_MODE_T MODE_getCurrentMode(void) {
@@ -27,4 +28,12 @@ void MODE_setEnglishMode() {
 
 boolean MODE_isJpMode() {
   return mIsJpMode;
+}
+
+void MODE_setInputMethod(INPUT_METHOD_T inputMethod) {
+  m_InputMethod = inputMethod;
+}
+
+INPUT_METHOD_T MODE_getInputMethod(void) {
+  return m_InputMethod;
 }

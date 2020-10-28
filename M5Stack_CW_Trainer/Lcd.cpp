@@ -55,7 +55,6 @@ String menu[] = {
 MENU_ITEM_T menuItem;             //current mode
 MENU_ITEM_T tmpMenuItem;          //selecting parameter in menu
 MENU_ITEM_T preMenuItem;          //preSelecting mode in menu loop
-INPUT_METHOD_T inputMethod;       //current input method
 INPUT_METHOD_T tmpInputMethod;    //selecting parameter in menu
 bool tmpIsJapanese      = false;  //selecting parameter in menu
 int  tmpDotInterval     = 0;      //selecting parameter in menu
@@ -71,7 +70,6 @@ int mIndex1  = 0;       //Current index of Menu item
 void LCD_init() {
   menuItem           = MENU_SELECT;
   preMenuItem        = MENU_SELECT;
-  inputMethod        = DEFAULT_INPUT_METHOD;
   isTrainingMode     = true;
   isPowerOffSelected = false;
 }
@@ -205,7 +203,7 @@ void printLastLine() {
       M5.Lcd.print( "MENU" );
       //middle button label
       M5.Lcd.setCursor( 125, startTextPositionY );
-      if ( inputMethod == INPUT_M5_BTN_B ) {
+      if ( MODE_getInputMethod() == INPUT_M5_BTN_B ) {
         //Button Image
         M5.Lcd.fillRoundRect(145, M5_TFT_HEIGHT -18, 35, 16, 10, YELLOW);
       } else {
@@ -221,7 +219,7 @@ void printLastLine() {
       M5.Lcd.print( "MENU" );
       //middle button label
       M5.Lcd.setCursor( 125, startTextPositionY );
-      if ( inputMethod == INPUT_M5_BTN_B ) {
+      if ( MODE_getInputMethod() == INPUT_M5_BTN_B ) {
         //Button Image
         M5.Lcd.fillRoundRect(145, M5_TFT_HEIGHT -18, 35, 16, 10, YELLOW);
       } else {
@@ -270,7 +268,7 @@ void LCD_openMenu() {
   tmpMenuItem       = MENU_SELECT;
   tmpIsJapanese     = MODE_isJpMode();
   tmpDotInterval    = DECODE_getInterval();
-  tmpInputMethod    = inputMethod;
+  tmpInputMethod    = MODE_getInputMethod();
   tmpIsTrainingMode = isTrainingMode;
   mIndex1           = 0;
 
@@ -499,7 +497,7 @@ void selectInputMethod() {
     } else {
       M5.Lcd.print("-> Telegraph key");
     }
-    inputMethod = tmpInputMethod;
+    MODE_setInputMethod(tmpInputMethod);
   }
 }
 
@@ -667,11 +665,6 @@ void LCD_printNextChar() {
   //printNext
   TRAIN_printNextChar();
   M5.Lcd.setCursor( 0, STR_START_Y_TRAIN ); //Start line of Training Mode
-}
-
-//Get Current Input Method
-INPUT_METHOD_T LCD_getInputMethod() {
-  return inputMethod;
 }
 
 //Main menu control
