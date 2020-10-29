@@ -25,7 +25,7 @@ void execDecode(){
 
   int state = HIGH;
 
-  if ( LCD_getInputMethod() == INPUT_M5_BTN_B ) {
+  if ( MODE_getInputMethod() == INPUT_M5_BTN_B ) {
     //M5 Stack Button input
     if(M5.BtnB.isPressed()) {
       state = LOW;
@@ -68,6 +68,7 @@ void setup() {
 
   //initial mode setting
   MODE_setCurrentMode(TRAIN_MODE);
+  MODE_setInputMethod(DEFAULT_INPUT_METHOD);
 
   M5LocalTone(1000);
 
