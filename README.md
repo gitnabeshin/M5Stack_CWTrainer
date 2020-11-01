@@ -9,7 +9,7 @@
   * English / Japanese.
 * Training mode
   * Firstly it shows a letter and makes its Morse code sound.
-  * Secondaly you input Morse code.
+  * Secondary you input Morse code.
   * Then if it is correct, it switches to the next letter automaticaly. 
 * Free Training mode
   * You can train inputting Morse code in wide screen.
@@ -19,6 +19,7 @@
   * QR code (The Encode page URL) is available in Menu.
 * Adjustable Dot period 
   * Dot period is adjustable to slow input for beginers.
+* WiFi status & Battery indicator  
 * Meticulous Menu mode.
   * You can set these all configurations in Menu mode.
   * Default Mode can be changed in your TrainerConfig.h.
@@ -28,7 +29,7 @@
   * This code uses "genshin-regular-16pt.vlw" is available from http://jikasei.me/font/genshin/.
   * Japanese Katakana font is needed in Japanese Mode. 
 
-## Default Configrations
+## Default Configurations
 **TrainerConfig.h**
 
 ```
@@ -41,7 +42,7 @@
 #define TELEGRAPH_KEY_GPIO    (26)                    //TELEGRAPH_KEY GPIO 26 (for INPUT_TELEGRAPH_KEY)
 
 // --------------------------
-// ESP32 SoftAP Configration
+// ESP32 SoftAP Configuration
 // --------------------------
 #define TRAINER_SSID          "M5_CWTrainer"
 #define TRAINER_PASS          "m5stack"
