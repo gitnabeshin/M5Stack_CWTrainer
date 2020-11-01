@@ -1,5 +1,5 @@
 /**************************************************************************
- * Configration Header
+ * Configuration Header
  *
  * Ver.1.0
  **************************************************************************/
@@ -15,7 +15,7 @@
 #define TELEGRAPH_KEY_GPIO    (26)                    //TELEGRAPH_KEY GPIO 26 (for INPUT_TELEGRAPH_KEY)
 
 // --------------------------
-// ESP32 SoftAP Configration
+// ESP32 SoftAP Configuration
 // --------------------------
 #define TRAINER_SSID          "M5_CWTrainer"
 #define TRAINER_PASS          "m5stack"

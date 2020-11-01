@@ -13,7 +13,7 @@ WebServer server(80);
 
 bool isWEBIFEnabled = false;
 
-//ESP32 SoftAP Configration
+//ESP32 SoftAP Configuration
 const char ssid[] = TRAINER_SSID;
 const char pass[] = TRAINER_PASS;
 const IPAddress ip(TRAINER_IP_ADDR);
