@@ -18,7 +18,7 @@ typedef enum INPUT_METHOD {
 } INPUT_METHOD_T;
 
 CTRL_MODE_T MODE_getCurrentMode(void);
-CTRL_MODE_T MODE_setCurrentMode(CTRL_MODE_T ctrlMode);
+void MODE_setCurrentMode(CTRL_MODE_T ctrlMode);
 
 void MODE_setJpMode(void);
 void MODE_setEnglishMode(void);
