@@ -14,7 +14,7 @@ CTRL_MODE_T MODE_getCurrentMode(void) {
   return m_CtrlMode;
 }
 
-CTRL_MODE_T MODE_setCurrentMode(CTRL_MODE_T ctrlMode) {
+void MODE_setCurrentMode(CTRL_MODE_T ctrlMode) {
   m_CtrlMode = ctrlMode;
 }
 
